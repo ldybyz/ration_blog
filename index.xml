@@ -6,7 +6,16 @@
     <description>Recent content on Even - A super concise theme for Hugo</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 07 Sep 2022 19:33:46 +0000</lastBuildDate><atom:link href="https://ldybyz.github.io/ration_blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 07 Sep 2022 23:46:38 +0000</lastBuildDate><atom:link href="https://ldybyz.github.io/ration_blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Some Content</title>
+      <link>https://ldybyz.github.io/ration_blog/post/some-content/</link>
+      <pubDate>Wed, 07 Sep 2022 23:46:38 +0000</pubDate>
+      
+      <guid>https://ldybyz.github.io/ration_blog/post/some-content/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>First Post</title>
       <link>https://ldybyz.github.io/ration_blog/posts/first-post/</link>
