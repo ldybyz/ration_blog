@@ -2,9 +2,19 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://ldybyz.github.io/ration_blog/categories/</loc>
+    <loc>https://ldybyz.github.io/ration_blog/posts/my-second-post/</loc>
+    <lastmod>2022-09-07T21:43:05+00:00</lastmod>
+  </url><url>
+    <loc>https://ldybyz.github.io/ration_blog/posts/</loc>
+    <lastmod>2022-09-07T21:43:05+00:00</lastmod>
   </url><url>
     <loc>https://ldybyz.github.io/ration_blog/</loc>
+    <lastmod>2022-09-07T21:43:05+00:00</lastmod>
+  </url><url>
+    <loc>https://ldybyz.github.io/ration_blog/posts/first-post/</loc>
+    <lastmod>2022-09-07T19:33:46+00:00</lastmod>
+  </url><url>
+    <loc>https://ldybyz.github.io/ration_blog/categories/</loc>
   </url><url>
     <loc>https://ldybyz.github.io/ration_blog/tags/</loc>
   </url>
