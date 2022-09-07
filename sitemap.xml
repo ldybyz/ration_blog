@@ -1,18 +1,37 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+<?xml-stylesheet type="text/xsl" href="https://ldybyz.github.io/ration_blog/sitemap.xsl"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <url>
+    <loc>https://ldybyz.github.io/ration_blog/</loc>
+    <lastmod>2022-09-07T19:33:46+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
   <url>
     <loc>https://ldybyz.github.io/ration_blog/posts/first-post/</loc>
     <lastmod>2022-09-07T19:33:46+00:00</lastmod>
-  </url><url>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://ldybyz.github.io/ration_blog/posts/</loc>
     <lastmod>2022-09-07T19:33:46+00:00</lastmod>
-  </url><url>
-    <loc>https://ldybyz.github.io/ration_blog/</loc>
-    <lastmod>2022-09-07T19:33:46+00:00</lastmod>
-  </url><url>
-    <loc>https://ldybyz.github.io/ration_blog/categories/</loc>
-  </url><url>
-    <loc>https://ldybyz.github.io/ration_blog/tags/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
+  
+  <url>
+    <loc>https://ldybyz.github.io/ration_blog/categories/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://ldybyz.github.io/ration_blog/tags/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
 </urlset>

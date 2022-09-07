@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Categories on Ration Blog</title>
+    <title>Categories on Even - A super concise theme for Hugo</title>
     <link>https://ldybyz.github.io/ration_blog/categories/</link>
-    <description>Recent content in Categories on Ration Blog</description>
+    <description>Recent content in Categories on Even - A super concise theme for Hugo</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://ldybyz.github.io/ration_blog/categories/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language><atom:link href="https://ldybyz.github.io/ration_blog/categories/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
