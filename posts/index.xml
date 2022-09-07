@@ -6,16 +6,7 @@
     <description>Recent content in Posts on Ration Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 07 Sep 2022 21:43:05 +0000</lastBuildDate><atom:link href="https://ldybyz.github.io/ration_blog/posts/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>My Second Post</title>
-      <link>https://ldybyz.github.io/ration_blog/posts/my-second-post/</link>
-      <pubDate>Wed, 07 Sep 2022 21:43:05 +0000</pubDate>
-      
-      <guid>https://ldybyz.github.io/ration_blog/posts/my-second-post/</guid>
-      <description></description>
-    </item>
-    
+    <lastBuildDate>Wed, 07 Sep 2022 19:33:46 +0000</lastBuildDate><atom:link href="https://ldybyz.github.io/ration_blog/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>First Post</title>
       <link>https://ldybyz.github.io/ration_blog/posts/first-post/</link>
