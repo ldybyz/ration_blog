@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Even - A super concise theme for Hugo</title>
+    <link>https://ldybyz.github.io/ration_blog/posts/</link>
+    <description>Recent content in Posts on Even - A super concise theme for Hugo</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 07 Sep 2022 19:33:46 +0000</lastBuildDate><atom:link href="https://ldybyz.github.io/ration_blog/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>First Post</title>
+      <link>https://ldybyz.github.io/ration_blog/posts/first-post/</link>
+      <pubDate>Wed, 07 Sep 2022 19:33:46 +0000</pubDate>
+      
+      <guid>https://ldybyz.github.io/ration_blog/posts/first-post/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
