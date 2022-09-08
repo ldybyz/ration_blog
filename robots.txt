@@ -1,2 +1,0 @@
-User-agent: *
-Sitemap: https://ldybyz.github.io/ration_blog/sitemap.xml
