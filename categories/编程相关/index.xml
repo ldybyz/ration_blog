@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>编程相关 on Ration</title>
+    <link>https://ldybyz.github.io/ration_blog/categories/%E7%BC%96%E7%A8%8B%E7%9B%B8%E5%85%B3/</link>
+    <description>Recent content in 编程相关 on Ration</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 22 Sep 2022 16:09:24 +0000</lastBuildDate><atom:link href="https://ldybyz.github.io/ration_blog/categories/%E7%BC%96%E7%A8%8B%E7%9B%B8%E5%85%B3/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>我对Spring Bean的理解</title>
+      <link>https://ldybyz.github.io/ration_blog/post/what-is-spring-bean/</link>
+      <pubDate>Thu, 22 Sep 2022 16:09:24 +0000</pubDate>
+      
+      <guid>https://ldybyz.github.io/ration_blog/post/what-is-spring-bean/</guid>
+      <description>废话 最近因为在准备面试，决定研究一下Spring,就从Bean开始。找了一些书看，又看了一些博客，好多都是贴一大堆源码，似懂非懂。接着我又试</description>
+    </item>
+    
+  </channel>
+</rss>

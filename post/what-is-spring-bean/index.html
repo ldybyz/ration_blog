@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>我对Spring Bean的理解 - Ration</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="ration" /><meta name="description" content="废话 最近因为在准备面试，决定研究一下Spring,就从Bean开始。找了一些书看，又看了一些博客，好多都是贴一大堆源码，似懂非懂。接着我又试" /><meta name="keywords" content="ration, blog, programming" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.102.3 with theme even" />
+
+
+<link rel="canonical" href="https://ldybyz.github.io/ration_blog/post/what-is-spring-bean/" />
+<link rel="apple-touch-icon" sizes="180x180" href="/ration_blog/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/ration_blog/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/ration_blog/favicon-16x16.png">
+<link rel="manifest" href="/ration_blog/manifest.json">
+<link rel="mask-icon" href="/ration_blog/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+<link href="/ration_blog/sass/main.min.f92fd13721ddf72129410fd8250e73152cc6f2438082b6c0208dc24ee7c13fc4.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
+
+
+<meta property="og:title" content="我对Spring Bean的理解" />
+<meta property="og:description" content="废话 最近因为在准备面试，决定研究一下Spring,就从Bean开始。找了一些书看，又看了一些博客，好多都是贴一大堆源码，似懂非懂。接着我又试" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://ldybyz.github.io/ration_blog/post/what-is-spring-bean/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2022-09-22T16:09:24+00:00" />
+<meta property="article:modified_time" content="2022-09-22T16:09:24+00:00" />
+
+<meta itemprop="name" content="我对Spring Bean的理解">
+<meta itemprop="description" content="废话 最近因为在准备面试，决定研究一下Spring,就从Bean开始。找了一些书看，又看了一些博客，好多都是贴一大堆源码，似懂非懂。接着我又试"><meta itemprop="datePublished" content="2022-09-22T16:09:24+00:00" />
+<meta itemprop="dateModified" content="2022-09-22T16:09:24+00:00" />
+<meta itemprop="wordCount" content="1448">
+<meta itemprop="keywords" content="java," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="我对Spring Bean的理解"/>
+<meta name="twitter:description" content="废话 最近因为在准备面试，决定研究一下Spring,就从Bean开始。找了一些书看，又看了一些博客，好多都是贴一大堆源码，似懂非懂。接着我又试"/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">Ration</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/ration_blog/">
+        <li class="mobile-menu-item">主页</li>
+      </a><a href="/ration_blog/post/">
+        <li class="mobile-menu-item">归档</li>
+      </a><a href="/ration_blog/tags/">
+        <li class="mobile-menu-item">标签</li>
+      </a><a href="/ration_blog/categories/">
+        <li class="mobile-menu-item">分类</li>
+      </a>
+  </ul>
+
+  
+
+
+</nav>
+
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo">Ration</a>
+</div>
+
+
+
+
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/ration_blog/">主页</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/ration_blog/post/">归档</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/ration_blog/tags/">标签</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/ration_blog/categories/">分类</a>
+      </li>
+  </ul>
+</nav>
+
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title">我对Spring Bean的理解</h1>
+
+      <div class="post-meta">
+        <span class="post-time"> 2022-09-22 </span>
+        <div class="post-category">
+            <a href="/ration_blog/categories/%E7%BC%96%E7%A8%8B%E7%9B%B8%E5%85%B3/"> 编程相关 </a>
+            </div>
+        
+      </div>
+    </header>
+
+    <div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">文章目录</h2>
+  <div class="post-toc-content always-active">
+    <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#废话">废话</a></li>
+        <li><a href="#什么是spring-bean">什么是Spring Bean</a></li>
+        <li><a href="#怎么定义一个spring-bean">怎么定义一个Spring Bean</a></li>
+        <li><a href="#spring-bean-定义beandefinetion是一种怎样的结构">Spring Bean 定义（BeanDefinetion)是一种怎样的结构</a></li>
+        <li><a href="#bean的作用域">Bean的作用域</a></li>
+        <li><a href="#bean的生命周期">Bean的生命周期</a></li>
+        <li><a href="#其他">其他</a></li>
+        <li><a href="#参考">参考</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </div>
+</div>
+    <div class="post-content">
+      <h2 id="废话">废话</h2>
+<p>最近因为在准备面试，决定研究一下Spring,就从Bean开始。找了一些书看，又看了一些博客，好多都是贴一大堆源码，似懂非懂。接着我又试着看源码，打断点调试，有些代码总感觉很杂，用了很多while,嵌套了很多层。我想，这大概是因为bean类型和涉及的范围广，所以才会涉及到那么多类，比如BeanFactoryPostProcessor，BeanFactory，BeanPostProcessor，Aware接口。就让我把是懂非懂的想法写下来，后面有错误的地方会修改。</p>
+<h2 id="什么是spring-bean">什么是Spring Bean</h2>
+<p>官方的说法，Bean就是由IOC容器初始化、装配及管理的对象。我的理解是，一个普通的类可以封装成一个Bean，然后放置在Spring容器里，需要用到这个类时，可以直接从容器里把这个对象取出来，一般是根据Bean的唯一名称（源码里DefaultListableBeanFactory是用了Map结构来放置）。</p>
+<h2 id="怎么定义一个spring-bean">怎么定义一个Spring Bean</h2>
+<p>1.基于xml配置装配：通过XML添加一个bean标签</p>
+<p>2.基于Java代码装配：创建一个配置类（JavaConfig），再用@Bean注解用于声明一个Bean（可以声明多个）。</p>
+<p>3.基于注解的装配（自动化装配）：使用@Component注解表明该类是一个组件类，它将通知Spring为该类创建一个Bean。再使用@ComponentScan注解启用组件扫描（另外一个类）</p>
+<h2 id="spring-bean-定义beandefinetion是一种怎样的结构">Spring Bean 定义（BeanDefinetion)是一种怎样的结构</h2>
+<p>我使用Spring Boot Actuator的beans接口拿到了bean的结构，我的理解是bean定义。json结构如下所示。字段分别是别名，作用域，类型全名，来源（一般是JavaConfig类或者没有），依赖（一个类的创建需要其他类，这里用bean名称）</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">{ &#34;applicationTaskExecutor&#34;:{        
+</span></span><span class="line"><span class="cl">&#34;aliases&#34;:[&#34;taskExecutor&#34;],   
+</span></span><span class="line"><span class="cl">&#34;scope&#34;:&#34;singleton&#34;,  
+</span></span><span class="line"><span class="cl">&#34;type&#34;:&#34;org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor&#34;,  &#34;resource&#34;:&#34;class path resource [org/springframework/boot/autoconfigure/task/TaskExecutionAutoConfiguration.class]&#34;,
+</span></span><span class="line"><span class="cl">&#34;dependencies&#34;:[&#34;taskExecutorBuilder&#34;]    
+</span></span><span class="line"><span class="cl">}}
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="bean的作用域">Bean的作用域</h2>
+<p>Bean的作用域指的是在程序运行的一段时间内，同一个Bean是多次创建，还是只创建一次，具体是根据什么来区分的。几种常见的作用域如下：</p>
+<p>1.singleton:单例，一个Spring容器中只有一个Bean的实例，程序默认配置</p>
+<p>2.propotype:每次调用新建一个Bean的实例</p>
+<p>3.request:每次web请求都会新建一个Bean的实例</p>
+<p>4.session:每个会话都会新建一个Bean的实例</p>
+<h2 id="bean的生命周期">Bean的生命周期</h2>
+<p>《Spring Beans in Depth》博客里把生命周期分为11个步骤，也有其他分法的。这里为了便于理解，分成六个步骤：</p>
+<p>1.获取bean定义：通过XML,注解获取Bean定义</p>
+<p>2.bean实例化： Spring实例化bean对象，并将对象加载到ApplicationContext中
+3.填充bean属性：设置bean定义的相关属性，比如name等。同时扫描Aware接口,在属性设置时作一些处理。例如，设置bean名称的时候，可以打印bean名称出来。
+4.初始化bean:Spring的BeanPostProcessors在这个阶段开始起作用。这里我们可以在执行前，执行后自定义一些操作。
+5.准备好：bean已经创建成功，并注入到所有的依赖里。
+6.销毁bean:我们同样可以在这个阶段进行一些处理，比如数据库连接关闭。</p>
+<h2 id="其他">其他</h2>
+<p>1.Spring Boot Web程序启动后，一般来说容器里的Bean是已经定义好的。但是通过一些监听器能够重新创建Bean,例如配置的修改触发事件。
+2.Spring容器还提供了Bean缓存和Bean懒加载等功能。</p>
+<h2 id="参考">参考</h2>
+<p><a href="https://medium.com/javarevisited/spring-beans-in-depth-a6d8b31db8a1">Spring Beans in Depth</a></p>
+<p><a href="https://mp.weixin.qq.com/s?__biz=MzkwNzI0MzQ2NQ==&amp;mid=2247488903&amp;idx=1&amp;sn=87b83ebeba6be8250f1c9c8686186d87&amp;source=41#wechat_redirect">Spring Bean 生命周期之“我要到哪里去”？</a></p>
+
+    </div>
+
+    <div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">文章作者</span>
+    <span class="item-content">ration</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">上次更新</span>
+    <span class="item-content">
+        2022-09-22
+        
+    </span>
+  </p>
+  
+  
+</div>
+<footer class="post-footer">
+      <div class="post-tags">
+          <a href="/ration_blog/tags/java/">java</a>
+          </div>
+      <nav class="post-nav">
+        
+        <a class="next" href="/ration_blog/post/my-first-blog/">
+            <span class="next-text nav-default">从读书到开始写博客</span>
+            <span class="next-text nav-mobile">下一篇</span>
+            <i class="iconfont icon-right"></i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+        </div>
+        
+
+  
+
+  
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="mailto:ldybyz@gmail.com" class="iconfont icon-email" title="email"></a>
+  <a href="https://ldybyz.github.io/ration_blog/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    由 <a class="hexo-link" href="https://gohugo.io">Hugo</a> 驱动
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    主题 - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  
+
+  <span class="copyright-year">
+    &copy; 
+    2017 - 
+    2022<span class="heart"><i class="iconfont icon-heart"></i></span><span>ration</span>
+  </span>
+</div>
+
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js" integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin="anonymous"></script>
+
+
+
+<script type="text/javascript" src="/ration_blog/js/main.min.4ae89da218555efa0e7093a20b92017d2e1202b66fff9fc2edf4cb8d44b44c6e.js"></script>
+
+
+
+
+
+
+
+
+</body>
+</html>
