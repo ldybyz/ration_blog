@@ -2,13 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://ldybyz.github.io/ration_blog/post/influence/</loc>
-    <lastmod>2022-10-17T12:08:14+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>https://ldybyz.github.io/ration_blog/categories/</loc>
     <lastmod>2022-10-17T12:08:14+00:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -38,6 +31,13 @@
   
   <url>
     <loc>https://ldybyz.github.io/ration_blog/categories/%E6%8C%81%E7%BB%AD%E6%80%9D%E8%80%83/</loc>
+    <lastmod>2022-10-17T12:08:14+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://ldybyz.github.io/ration_blog/post/influence/</loc>
     <lastmod>2022-10-17T12:08:14+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
