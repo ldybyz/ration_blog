@@ -2,35 +2,63 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://ldybyz.github.io/ration_blog/categories/</loc>
-    <lastmod>2022-10-09T23:14:49+00:00</lastmod>
+    <loc>https://ldybyz.github.io/ration_blog/post/influence/</loc>
+    <lastmod>2022-10-17T12:08:14+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://ldybyz.github.io/ration_blog/tags/java/</loc>
-    <lastmod>2022-10-09T23:14:49+00:00</lastmod>
+    <loc>https://ldybyz.github.io/ration_blog/categories/</loc>
+    <lastmod>2022-10-17T12:08:14+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://ldybyz.github.io/ration_blog/post/</loc>
-    <lastmod>2022-10-09T23:14:49+00:00</lastmod>
+    <lastmod>2022-10-17T12:08:14+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://ldybyz.github.io/ration_blog/</loc>
-    <lastmod>2022-10-09T23:14:49+00:00</lastmod>
+    <lastmod>2022-10-17T12:08:14+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://ldybyz.github.io/ration_blog/tags/</loc>
+    <lastmod>2022-10-17T12:08:14+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://ldybyz.github.io/ration_blog/categories/%E6%8C%81%E7%BB%AD%E6%80%9D%E8%80%83/</loc>
+    <lastmod>2022-10-17T12:08:14+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://ldybyz.github.io/ration_blog/tags/%E8%AF%BB%E4%B9%A6/</loc>
+    <lastmod>2022-10-17T12:08:14+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://ldybyz.github.io/ration_blog/tags/%E5%BF%83%E7%90%86%E5%AD%A6/</loc>
+    <lastmod>2022-10-17T12:08:14+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://ldybyz.github.io/ration_blog/tags/java/</loc>
     <lastmod>2022-10-09T23:14:49+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -58,21 +86,7 @@
   </url>
   
   <url>
-    <loc>https://ldybyz.github.io/ration_blog/categories/%E6%8C%81%E7%BB%AD%E6%80%9D%E8%80%83/</loc>
-    <lastmod>2022-09-08T10:11:58+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>https://ldybyz.github.io/ration_blog/post/my-first-blog/</loc>
-    <lastmod>2022-09-08T10:11:58+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://ldybyz.github.io/ration_blog/tags/%E8%AF%BB%E4%B9%A6/</loc>
     <lastmod>2022-09-08T10:11:58+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
