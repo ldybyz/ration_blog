@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>从读书到开始写博客 - Ration</title>
+  <title>What Is JVM - Ration</title>
   <meta name="renderer" content="webkit" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 
@@ -16,7 +16,7 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
 
 
-<meta name="author" content="ration" /><meta name="description" content="背景 去年年底，从公司辞职后，我一直处于空窗期，对求职也渐渐失去去了信心。期间，看了一些书，也走了一些路，迷茫也颓废，也开始重新审视起自己来。" /><meta name="keywords" content="ration, blog, programming" />
+<meta name="author" content="ration" /><meta name="description" content="我理解的JVM JVM英文全称是Java Virtual Machine，中文名是JAVA虚拟机。字面理解是一个运行Java程序的虚拟的机器，实际上不止Jav" /><meta name="keywords" content="ration, blog, programming" />
 
 
 
@@ -26,7 +26,7 @@
 <meta name="generator" content="Hugo 0.104.3 with theme even" />
 
 
-<link rel="canonical" href="https://ldybyz.github.io/ration_blog/post/my-first-blog/" />
+<link rel="canonical" href="https://ldybyz.github.io/ration_blog/post/what-is-jvm/" />
 <link rel="apple-touch-icon" sizes="180x180" href="/ration_blog/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/ration_blog/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/ration_blog/favicon-16x16.png">
@@ -39,20 +39,20 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
 
 
-<meta property="og:title" content="从读书到开始写博客" />
-<meta property="og:description" content="背景 去年年底，从公司辞职后，我一直处于空窗期，对求职也渐渐失去去了信心。期间，看了一些书，也走了一些路，迷茫也颓废，也开始重新审视起自己来。" />
+<meta property="og:title" content="What Is JVM" />
+<meta property="og:description" content="我理解的JVM JVM英文全称是Java Virtual Machine，中文名是JAVA虚拟机。字面理解是一个运行Java程序的虚拟的机器，实际上不止Jav" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://ldybyz.github.io/ration_blog/post/my-first-blog/" /><meta property="article:section" content="post" />
-<meta property="article:published_time" content="2022-09-08T10:11:58+00:00" />
-<meta property="article:modified_time" content="2022-09-08T10:11:58+00:00" />
+<meta property="og:url" content="https://ldybyz.github.io/ration_blog/post/what-is-jvm/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2022-10-09T23:14:49+00:00" />
+<meta property="article:modified_time" content="2022-10-09T23:14:49+00:00" />
 
-<meta itemprop="name" content="从读书到开始写博客">
-<meta itemprop="description" content="背景 去年年底，从公司辞职后，我一直处于空窗期，对求职也渐渐失去去了信心。期间，看了一些书，也走了一些路，迷茫也颓废，也开始重新审视起自己来。"><meta itemprop="datePublished" content="2022-09-08T10:11:58+00:00" />
-<meta itemprop="dateModified" content="2022-09-08T10:11:58+00:00" />
-<meta itemprop="wordCount" content="896">
-<meta itemprop="keywords" content="读书," /><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="从读书到开始写博客"/>
-<meta name="twitter:description" content="背景 去年年底，从公司辞职后，我一直处于空窗期，对求职也渐渐失去去了信心。期间，看了一些书，也走了一些路，迷茫也颓废，也开始重新审视起自己来。"/>
+<meta itemprop="name" content="What Is JVM">
+<meta itemprop="description" content="我理解的JVM JVM英文全称是Java Virtual Machine，中文名是JAVA虚拟机。字面理解是一个运行Java程序的虚拟的机器，实际上不止Jav"><meta itemprop="datePublished" content="2022-10-09T23:14:49+00:00" />
+<meta itemprop="dateModified" content="2022-10-09T23:14:49+00:00" />
+<meta itemprop="wordCount" content="502">
+<meta itemprop="keywords" content="java," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="What Is JVM"/>
+<meta name="twitter:description" content="我理解的JVM JVM英文全称是Java Virtual Machine，中文名是JAVA虚拟机。字面理解是一个运行Java程序的虚拟的机器，实际上不止Jav"/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -125,12 +125,12 @@
           <article class="post">
     
     <header class="post-header">
-      <h1 class="post-title">从读书到开始写博客</h1>
+      <h1 class="post-title">What Is JVM</h1>
 
       <div class="post-meta">
-        <span class="post-time"> 2022-09-08 </span>
+        <span class="post-time"> 2022-10-09 </span>
         <div class="post-category">
-            <a href="/ration_blog/categories/%E6%8C%81%E7%BB%AD%E6%80%9D%E8%80%83/"> 持续思考 </a>
+            <a href="/ration_blog/categories/%E7%BC%96%E7%A8%8B%E7%9B%B8%E5%85%B3/"> 编程相关 </a>
             </div>
         
       </div>
@@ -143,10 +143,10 @@
   <ul>
     <li>
       <ul>
-        <li><a href="#背景">背景</a></li>
-        <li><a href="#我为什么开始写博客">我为什么开始写博客</a></li>
-        <li><a href="#我想写些什么">我想写些什么</a></li>
-        <li><a href="#我用什么写博客">我用什么写博客</a></li>
+        <li><a href="#我理解的jvm">我理解的JVM</a></li>
+        <li><a href="#一个虚拟机该有什么样的功能">一个虚拟机该有什么样的功能？</a></li>
+        <li><a href="#怎么生成字节码虚拟机只处理字节码吗">怎么生成字节码，虚拟机只处理字节码吗？</a></li>
+        <li><a href="#一个类或者接口对应一个字节码文件或者说是字节流类与类之间的引用继承等关系">一个类或者接口，对应一个字节码文件或者说是字节流。类与类之间的引用，继承等关系。</a></li>
       </ul>
     </li>
   </ul>
@@ -154,14 +154,13 @@
   </div>
 </div>
     <div class="post-content">
-      <h2 id="背景">背景</h2>
-<p>去年年底，从公司辞职后，我一直处于空窗期，对求职也渐渐失去去了信心。期间，看了一些书，也走了一些路，迷茫也颓废，也开始重新审视起自己来。看的书很杂,《UNIX编程艺术》，《金阁寺》，《黄金时代》，《深阅读》，《潜规则》，《暗时间》。很多时候看书都是不求甚解，后面看了《深阅读》和《暗时间》，认识到自己阅读方法确实有很大的问题，获得的知识感悟不能让它浮于表面，思维应该是清晰且逻辑缜密的，而写博客是理清自己思路的方法之一。</p>
-<h2 id="我为什么开始写博客">我为什么开始写博客</h2>
-<p>很早之前自己写过一些博客，但现在看来，那只不过是一些知识点的笔记。直到我最近看了《暗时间》中的一篇文章《为什么你应该写博客》。书中提到了一个观点，书写是更好的思考。绝大多数时候我们用的是思维捷径，甚至是不求甚解，而写博客能让你成为一个持续学习和思考的人。要做到这点，写博客时必须只写自己真正思考和总结之后的产物，鄙弃自己的碎碎念。在写博客中更好的思考，希望自己不忘初衷，坚持下来。</p>
-<h2 id="我想写些什么">我想写些什么</h2>
-<p>首先给自己立个小目标，每个月至少写4篇博客，算下来一个星期一篇(实际发现自己写不了那么多&hellip;)。其次，不为写博客而写博客，必须有内容，有思考。写些什么呢，不宜太过分散，随心所欲，那就从自己看的书和自己从事的职业开始。所以，我暂时把写的内容分成两个部分，一是编程相关，一是边读书边思考。目标是把自己的思考过程写下来，以后重新审视自己写过的博客，能够看到自己的一些缺陷并尝试改进。一直以来文笔不好，思考也经常断层，也希望能够通过写博客得到改善。</p>
-<h2 id="我用什么写博客">我用什么写博客</h2>
-<p>以前的人写文章，一张纸，一支笔足矣。很多人都说博客内容最重要，工具是次要的。但我还是不免落俗花了很多时间来寻找写博客的工具。以前自己在博客园写过博客，挺好的一平台。现在考虑的是快速，简洁，有多个备份，能在多个平台发布。最终选择了hugo+github page的方式，模板用的是hugo-theme-even。文档是mark down格式，编辑器用的Visual Studio Code。缺乏的是没有评论之类的功能，也减少了和别人交流的机会，先不折腾了，迁移到其他平台还是很方便的，再次提醒自己，重要的是内容。</p>
+      <h2 id="我理解的jvm">我理解的JVM</h2>
+<p>JVM英文全称是Java Virtual Machine，中文名是JAVA虚拟机。字面理解是一个运行Java程序的虚拟的机器，实际上不止Java,也有其他语言比如Kotlin也可以使用JAVA虚拟机，所以倒不如说是运行字节码程序的虚拟的机器。计算机的操作系统是抽象，接着虚拟机又加了一层抽象，最后执行的还是一个个0或1的电信号。</p>
+<h2 id="一个虚拟机该有什么样的功能">一个虚拟机该有什么样的功能？</h2>
+<p>linux操作系统拥有内存，进程，锁等概念，对应的Java虚拟机也有内存，线程，锁等概率。虚拟机运行一个字节码程序的步骤如下：1.读取并载入字节码，并解析到内存中，比如类加载 2.获取程序的主入口，即main函数开始执行，此时默认新建一个主线程，这时涉及到线程栈 3.使用垃圾回收机制自动内存管理（子线程处理）</p>
+<h2 id="怎么生成字节码虚拟机只处理字节码吗">怎么生成字节码，虚拟机只处理字节码吗？</h2>
+<p>Java程序可以通过Javac编译成字节码，但实际上我们也可以通过Java程序生成字节码，比如动态代理类就是这么搞出来的。事实上虚拟机除了能处理字节码，也会用即时编译器直接编译成本机代码，而且字节码程序也可以直接调用本机代码。</p>
+<h2 id="一个类或者接口对应一个字节码文件或者说是字节流类与类之间的引用继承等关系">一个类或者接口，对应一个字节码文件或者说是字节流。类与类之间的引用，继承等关系。</h2>
 
     </div>
 
@@ -173,7 +172,7 @@
   <p class="copyright-item">
     <span class="item-title">上次更新</span>
     <span class="item-content">
-        2022-09-08
+        2022-10-09
         
     </span>
   </p>
@@ -182,15 +181,15 @@
 </div>
 <footer class="post-footer">
       <div class="post-tags">
-          <a href="/ration_blog/tags/%E8%AF%BB%E4%B9%A6/">读书</a>
+          <a href="/ration_blog/tags/java/">java</a>
           </div>
       <nav class="post-nav">
-        <a class="prev" href="/ration_blog/post/what-is-spring-bean/">
-            <i class="iconfont icon-left"></i>
-            <span class="prev-text nav-default">我对Spring Bean的理解</span>
-            <span class="prev-text nav-mobile">上一篇</span>
-          </a>
         
+        <a class="next" href="/ration_blog/post/what-is-spring-bean/">
+            <span class="next-text nav-default">我对Spring Bean的理解</span>
+            <span class="next-text nav-mobile">下一篇</span>
+            <i class="iconfont icon-right"></i>
+          </a>
       </nav>
     </footer>
   </article>
