@@ -6,7 +6,25 @@
     <description>Recent content in Posts on Ration</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 31 Oct 2022 19:58:50 +0000</lastBuildDate><atom:link href="https://ldybyz.github.io/ration_blog/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 29 Nov 2022 22:19:54 +0000</lastBuildDate><atom:link href="https://ldybyz.github.io/ration_blog/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>读《算法之美》</title>
+      <link>https://ldybyz.github.io/ration_blog/post/beauty-of-algorithm/</link>
+      <pubDate>Tue, 29 Nov 2022 22:19:54 +0000</pubDate>
+      
+      <guid>https://ldybyz.github.io/ration_blog/post/beauty-of-algorithm/</guid>
+      <description>书评 《算法之美》主要写了一些常用算法的由来，计算机中的应用以及对我们生活的指导，书中侧重于讲述对我们生活的指导。最初接触算法，我的理解是好的</description>
+    </item>
+    
+    <item>
+      <title>《混沌》书评</title>
+      <link>https://ldybyz.github.io/ration_blog/post/chaos-anywhere/</link>
+      <pubDate>Tue, 29 Nov 2022 22:01:39 +0000</pubDate>
+      
+      <guid>https://ldybyz.github.io/ration_blog/post/chaos-anywhere/</guid>
+      <description>书评 混沌，我的理解是动力系统学中初始变量的变化，系统出现无规则运动的情形，这个也对应于动力系统的微分方程。《混沌》一书主要讲述的是混沌的发展</description>
+    </item>
+    
     <item>
       <title>读《人类大历史》</title>
       <link>https://ldybyz.github.io/ration_blog/post/human-history/</link>
