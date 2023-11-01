@@ -1,4 +1,4 @@
-baseURL = "https://ldybyz.github.io/ration_blog"
+baseURL = "https://blog.ration-app.com"
 languageCode = "en"
 defaultContentLanguage = "zh-cn"                             # en / zh-cn / ... (This field determines which i18n file to use)
 title = "Ration"
