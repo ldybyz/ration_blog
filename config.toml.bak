@@ -1,0 +1,8 @@
+baseURL = 'https://ldybyz.github.io/ration_blog'
+languageCode = 'en-us'
+title = 'Ration Blog'
+theme = 'ananke'
+canonifyurls = true
+contentdir = 'content'
+layoutdir = 'layouts'
+publishdir =  'public'
