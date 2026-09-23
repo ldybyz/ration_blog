@@ -1,4 +1,13 @@
 // ==============================
 // Custom style
 // ==============================
-// You can override the variables in _variables.scss to customize the style
+// Imported before _variables.scss; only !default variables can be overridden here.
+
+$theme-color: #2563eb;
+$deputy-color: #f6f8fa;
+$global-background: #ffffff;
+$global-lineheight: 1.8;
+$global-font-size: 17px;
+$code-color: #334155;
+$code-background: #f6f8fa;
+$global-body-width: 820px;

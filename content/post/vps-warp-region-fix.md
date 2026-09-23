@@ -4,6 +4,7 @@ date: 2026-09-23T15:00:00+08:00
 draft: false
 categories: ["运维"]
 tags: ["warp", "vps", "google", "cliproxy"]
+toc: true
 ---
 
 机房出口 IP 被 Geo 库标成中国区之后，Google 会直接拦 API，浏览器也会把 `google.com` 302 到 `google.com.hk`。本文记录一次在 Ubuntu 18.04 VPS 上的排查：官方 `warp-cli` 装不上，改用 Docker 跑 WARP，再分别接到 CLIProxyAPI 和 v2ray。

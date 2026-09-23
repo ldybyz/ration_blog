@@ -1,0 +1,149 @@
+/* Quieter inline code, GitHub-like blocks, less red. */
+
+.post-content {
+  letter-spacing: 0.01em;
+}
+
+.post-content code {
+  background: #f3f4f6;
+  color: #1f2937;
+  padding: 0.12em 0.38em;
+  border-radius: 4px;
+  font-size: 0.86em;
+}
+
+.post-content pre code,
+.highlight code {
+  background: transparent;
+  color: inherit;
+  padding: 0;
+  font-size: inherit;
+  border-radius: 0;
+}
+
+.highlight > .chroma {
+  box-shadow: none;
+  border: 1px solid #d0d7de;
+  border-radius: 6px;
+  background: #f6f8fa;
+}
+
+.highlight > .chroma > pre,
+.highlight > .chroma code {
+  padding: 16px;
+  margin: 0;
+  background: transparent;
+  line-height: 1.55;
+}
+
+.highlight > .chroma table::after {
+  display: none;
+}
+
+.highlight > .chroma .lntd:first-child pre,
+.highlight > .chroma .lntd:last-child pre {
+  padding-top: 16px;
+}
+
+.post-title {
+  line-height: 1.35;
+  letter-spacing: -0.02em;
+}
+
+.post-content a {
+  word-break: break-word;
+}
+
+.post-content a:hover {
+  border-bottom-color: #2563eb;
+}
+
+/* GitHub-like chroma (blue-gray, not solarized brick) */
+.highlight .chroma .c,
+.highlight .chroma .ch,
+.highlight .chroma .cm,
+.highlight .chroma .c1,
+.highlight .chroma .cs,
+.highlight .chroma .cp,
+.highlight .chroma .cpf {
+  color: #6e7781;
+  font-style: italic;
+}
+
+.highlight .chroma .k,
+.highlight .chroma .kc,
+.highlight .chroma .kd,
+.highlight .chroma .kn,
+.highlight .chroma .kp,
+.highlight .chroma .kr,
+.highlight .chroma .kt,
+.highlight .chroma .ow {
+  color: #0550ae;
+  font-weight: 600;
+}
+
+.highlight .chroma .n,
+.highlight .chroma .na,
+.highlight .chroma .nb,
+.highlight .chroma .bp,
+.highlight .chroma .nc,
+.highlight .chroma .no,
+.highlight .chroma .nd,
+.highlight .chroma .ni,
+.highlight .chroma .ne,
+.highlight .chroma .nf,
+.highlight .chroma .fm,
+.highlight .chroma .nl,
+.highlight .chroma .nn,
+.highlight .chroma .nx,
+.highlight .chroma .py,
+.highlight .chroma .nt,
+.highlight .chroma .nv,
+.highlight .chroma .vc,
+.highlight .chroma .vg,
+.highlight .chroma .vi,
+.highlight .chroma .vm {
+  color: #24292f;
+}
+
+.highlight .chroma .s,
+.highlight .chroma .sa,
+.highlight .chroma .sb,
+.highlight .chroma .sc,
+.highlight .chroma .dl,
+.highlight .chroma .sd,
+.highlight .chroma .s2,
+.highlight .chroma .se,
+.highlight .chroma .sh,
+.highlight .chroma .si,
+.highlight .chroma .sx,
+.highlight .chroma .sr,
+.highlight .chroma .s1,
+.highlight .chroma .ss,
+.highlight .chroma .l,
+.highlight .chroma .ld {
+  color: #0a3069;
+}
+
+.highlight .chroma .m,
+.highlight .chroma .mb,
+.highlight .chroma .mf,
+.highlight .chroma .mh,
+.highlight .chroma .mi,
+.highlight .chroma .il,
+.highlight .chroma .mo {
+  color: #0550ae;
+  font-weight: normal;
+}
+
+.highlight .chroma .g,
+.highlight .chroma .ge,
+.highlight .chroma .gr,
+.highlight .chroma .gh,
+.highlight .chroma .go,
+.highlight .chroma .gp,
+.highlight .chroma .gs,
+.highlight .chroma .gu,
+.highlight .chroma .gt {
+  color: #57606a;
+}
